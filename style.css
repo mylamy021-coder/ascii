@@ -1,3 +1,90 @@
-body{font-family:Arial,sans-serif;max-width:900px;margin:auto;padding:20px;line-height:1.6}
-pre{background:#f3f3f3;padding:15px;border-radius:8px;overflow:auto}
-.copy-btn{padding:8px 14px;cursor:pointer}
+/* --- Reset & Base Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* --- Container --- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    border-bottom: 2px dashed #ffffff;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+/* --- Headings --- */
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #ffffff;
+    padding-left: 10px;
+}
+
+/* --- Lists & Links --- */
+ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+/* Hover Effect: Inverts the colors (Retro Style) */
+a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
